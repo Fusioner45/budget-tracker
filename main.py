@@ -24,10 +24,9 @@ def total_gen(mes_depense):
     print(f"La somme général est de : {somme}")
 
 
-
-
-def lister():
-    print("a faire")
+def lister(mes_depense):
+    for elements in mes_depense:
+        print(f"La catégorie est {elements[1]} , le nom de l'objet est {elements[0]} et il a couter {elements[2]}")
 
 def main():
     categorie = ("Courses","Transport","Loyer","Études","Loisirs","Autre")
@@ -47,7 +46,7 @@ def main():
             case 3:
                 total_gen(mes_depense)
             case 4:
-                lister()
+                lister(mes_depense)
             case 5:
                 print("Aurevoir!")
                 break
