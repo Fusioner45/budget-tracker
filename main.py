@@ -17,8 +17,15 @@ def total_cat(mes_depense,categorie):
     print(f"La catégorie séléctioner est : {categorie_new} est a pour somme : {somme}")
 
 
-def total_gen():
-    print("a faire")
+def total_gen(mes_depense):
+    somme = 0
+    for elements in mes_depense:
+        somme = somme + elements[2]
+    print(f"La somme général est de : {somme}")
+
+
+
+
 def lister():
     print("a faire")
 
@@ -38,7 +45,7 @@ def main():
             case 2:
                 total_cat(mes_depense,categorie)
             case 3:
-                total_gen()
+                total_gen(mes_depense)
             case 4:
                 lister()
             case 5:
